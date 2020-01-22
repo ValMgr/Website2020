@@ -190,6 +190,32 @@ li{
     font-size: 2.5em;
 }
 
+.fadeOut{
+    animation: fadeOut 1s forwards linear;
+}
+
+.fadeIn{
+    animation: fadeIn 1s forwards linear;
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 /* ??? */
 /* .greyshade{
   z-index: 0;
