@@ -29,8 +29,6 @@ li{
   margin-bottom: 20px;
 }
 
-}
-
 .link5{
   position: relative;
   z-index:1;
@@ -49,7 +47,7 @@ li{
 
 .menu-container{
 	color: #000;
-	background-color: ;/*#5995DA;  /* Blue */
+	/* background-color: #5995DA; /* Blue */
   display: flex; 
 	max-width: 215px; 
  	margin-right: 10%;
@@ -81,7 +79,7 @@ li{
 .photography{
 	font-family: Goudy_OldStyle-Bold;
 	color: #000;
-	background-color: /*#5995DA*/;
+	/* background-color: #5995DA; */
 	padding: 20px 0;
 	margin-top: 20px;
 }
@@ -97,7 +95,7 @@ li{
 
 
 .projects{
-  	background-color: :/*#5995DA;*/
+  	/*background-color: #5995DA;*/
   	color: #000;
 }
 
@@ -167,26 +165,36 @@ li{
 /*HOMEPAGE*/
 
 .scene{
-  width: 100%
+  width: 100%;
   margin: 0 auto;
 }
 
-/*;
-.homepage-body{
-  background:url('IMG/photography/19compress/polizei.jpg') repeat-y 100% 100% fixed, #030303;
-  background-size:cover;
-  background-position: center;
-  height:100%;
-  width:100%;
+.background{
+    /* background-image: url('IMG/bg/bg-01.jpg');
+    background-size: cover;
+    background-position: -20%;
+    background-repeat: no-repeat; */
+    position: absolute;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
-*/
 
+#name{
+    color: #ffffff;
+    font-family: 'Goudy_OldStyle';
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 2.5em;
+}
 
-
-.greyshade{
+/* ??? */
+/* .greyshade{
   z-index: 0;
   position: absolute;
-  background:url(IMG/greyshade.png) ;
+  background:url('IMG/greyshade.png') ;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -196,13 +204,13 @@ li{
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 
 .nav-container{
   flex-direction: row;
   width: 300px;
-  background-color: #5995DA;
+  /* background-color: #5995DA; */
 
 }
 
@@ -237,7 +245,7 @@ li{
   letter-spacing: 8px;
   line-height: 150px;
   color: #FFF;
-  background-color: /*#000*/;
+  /* background-color: #000; */
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -253,7 +261,7 @@ li{
   width: 25%;
   margin-left: 69%;
   margin-top: 75px;
-  background-color: #5995DA;
+  /* background-color: #5995DA; */
 }
 
 .nav{
@@ -267,20 +275,19 @@ li{
 
 .nav a{
   color: #FFF;
-}
-
-.short-container{
-  z-index: 1;
-  position: absolute;
-  display: flex;
-  color: #FFF;
-  width: 35%;
-  margin: 35% ;
+  font-family: 'Goudy_OldStyle';
 }
 
 .short{
   text-align: center;
-  font-size: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: 'Goudy_OldStyle';
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  width: 35%;
+  margin: 35% ;
 }
 
 
@@ -324,7 +331,7 @@ li{
   }
 
   .right-column{
-    padding-left: : 0;
+    padding-left: 0;
   }
 
   .LOGO-container-res{
@@ -493,4 +500,3 @@ li{
   transform: none;
 }
 }
-
