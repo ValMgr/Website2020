@@ -15,7 +15,6 @@
         el.classList.add('fadeOut')
         setTimeout(function () {
             el.src = 'IMG/bg/bg-0' + index + '.jpg';
-            console.log("url change")
             setTimeout(function () {
                 el.classList.add('fadeIn')
                 el.classList.remove('fadeOut')
@@ -27,4 +26,4 @@
     }
 
 
-    setInterval(function() { changeURL(el); }, 10000); // Il faut changer ce nombre en millisecondes pour choisir le temps entre chaque photos
+   setInterval(function() { changeURL(el); }, 10000); // Il faut changer ce nombre en millisecondes pour choisir le temps entre chaque photos

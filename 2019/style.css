@@ -8,9 +8,17 @@
 	src: url(Goudy_OldStyle/LTCGoudyOldstyle-Bold.otf);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
   margin: 0;
   letter-spacing: 1.2px;
+  overflow-x: hidden;
+
 }
 
 a{
@@ -170,14 +178,11 @@ li{
 }
 
 .background{
-    /* background-image: url('IMG/bg/bg-01.jpg');
-    background-size: cover;
-    background-position: -20%;
-    background-repeat: no-repeat; */
+    background-color: #000;
     position: absolute;
     top:0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    transform: translateY(-200px);
     z-index: -1;
 }
 
@@ -187,7 +192,7 @@ li{
     position: absolute;
     top: 5%;
     left: 5%;
-    font-size: 2.5em;
+    font-size: 1em;
 }
 
 .fadeOut{
@@ -232,20 +237,13 @@ li{
   height: 100%;
 } */
 
-
+/* 
 .nav-container{
   flex-direction: row;
   width: 300px;
-  /* background-color: #5995DA; */
+  background-color: #5995DA;
 
-}
-
-.nav{
-    position: relative;
-    display: flex;
-    color: #FFF;
-    justify-content: space-between;
-}
+} */
 
 .category{
   z-index: 1;
@@ -286,8 +284,9 @@ li{
   align-items: stretch;
   width: 25%;
   margin-left: 69%;
-  margin-top: 75px;
-  /* background-color: #5995DA; */
+  padding-top: 75px;
+  position: absolute;
+
 }
 
 .nav{
@@ -296,7 +295,6 @@ li{
   font-weight: 500;
   width: 100%;
   justify-content: space-between;
-
 }
 
 .nav a{
@@ -311,9 +309,10 @@ li{
   font-family: 'Goudy_OldStyle';
   z-index: 2;
   position: absolute;
+  left: calc(32.5%);
+  top: 80%;
   display: flex;
   width: 35%;
-  margin: 35% ;
 }
 
 
@@ -525,4 +524,15 @@ li{
 {
   transform: none;
 }
+}
+
+
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    background-color: #000;
+    z-index: -1;
 }
