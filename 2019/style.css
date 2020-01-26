@@ -83,6 +83,25 @@ li{
 	margin-top: 30%;
 }
 
+.projects-list a:hover > .projects-list a:before{
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.projects-list a:before{
+content: "";
+position: absolute;
+width: 100%;
+height: 3px;
+left: 0;
+bottom: -5px;
+background:
+rgb(255, 255, 255);
+visibility: hidden;
+border-radius: 5px;
+transform: scaleX(0);
+transition: .25s linear;
+}
 
 .photography{
 	font-family: Goudy_OldStyle-Bold;
@@ -338,11 +357,11 @@ li{
 
   .flex-container {
     margin:  auto;
-    width: 90%;
+    width: 95%;
   }
 
   .row{
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .main {
@@ -351,14 +370,7 @@ li{
     justify-content: center;
   }
 
-  .left-column{
-    padding-right: 0;
-  }
-
-  .right-column{
-    padding-left: 0;
-  }
-
+ 
   .LOGO-container-res{
     display: flex;
     margin: auto;
@@ -384,11 +396,10 @@ li{
 
     display: block;
     position: relative;
-    top: 10px;
     height: 100%;
     margin: auto;
     z-index: 1;
-    
+    width: 95%;
     -webkit-user-select: none;
     user-select: none;
   }
@@ -409,69 +420,78 @@ li{
   #menuToggle input
 {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 50px;
+  height: 45px;
   position: absolute;
-  top: -7px;
-  left: -5px;
-  
+  top: 5px;
+  right: 10px;
   cursor: pointer;
-  
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-  
   -webkit-touch-callout: none;
 }
-
 /*
  * Just a quick hamburger
  */
 
-  #menuToggle span
-{
+  .nav-span span{
   display: block;
-  width: 33px;
   height: 4px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   position: relative;
-  
+  width: 50px;
   background: #000;
-  border-radius: 3px;
-  
+  border-radius: 3px;  
   z-index: 1;
-  
-  transform-origin: 0px 0px;
-  
+  transform-origin: bottom right;
+  float: right;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
+.nav-span{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 50px;
+  height: 45px;
 }
+
 
 #menuToggle span:nth-last-child(2)
 {
-  transform-origin: 0% 100%;
+  width: 35px;
+}
+
+#menuToggle span:nth-last-child(1)
+{
+  width: 25px;
+}
+
+#menuToggle input:checked
+{
+  position: fixed;
+  top: 17px;
+  right: 11px;
 }
 
 /* 
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
+#menuToggle input:checked ~ .nav-span span:nth-child(1)
 {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
   background: #000;
+  transform: rotate(-45deg) translate(0px, 1px);
+  width: 35px;
 }
 
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
+#menuToggle input:checked ~ .nav-span span:nth-child(2)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
@@ -480,9 +500,17 @@ li{
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
+#menuToggle input:checked ~ .nav-span span:nth-child(3)
 {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(45deg) translate(0px, 1px);
+  width: 35px;
+}
+
+#menuToggle input:checked ~ .nav-span{
+  position: fixed;
+  z-index: 1;
+  top: 17px;
+  right: 11px;
 }
 
 /*
@@ -491,19 +519,20 @@ li{
  */
 #menu
 {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   min-height: 100%;
   margin: 0 auto;
   padding: 50px;
   padding-top: 125px;
-  
+  top: 0;
   background: #FFF;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
+  text-align: center;
+
   transform-origin: 0% 0%;
   transform: translate(0, -100%);
   
@@ -524,6 +553,10 @@ li{
 {
   transform: none;
 }
+}
+
+#MMMenu{
+  height: 50px;
 }
 
 

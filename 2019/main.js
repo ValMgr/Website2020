@@ -16,9 +16,9 @@
         setTimeout(function () {
             el.src = 'IMG/bg/bg-0' + index + '.jpg';
             setTimeout(function () {
-                el.classList.add('fadeIn')
                 el.classList.remove('fadeOut')
-            }, 100);
+                el.classList.add('fadeIn')
+            }, 300);
 
         }, 1000);
         
