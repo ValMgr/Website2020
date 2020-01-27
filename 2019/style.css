@@ -46,7 +46,7 @@ li{
 
 .main{
  max-width: 1200px;
- width: 98%;
+ width: 100%;
  margin: 3% auto;
  display: flex;
  flex-direction: row;
@@ -149,7 +149,8 @@ transition: .25s linear;
 }
 
 .flex-container img{
-  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -361,7 +362,7 @@ transition: .25s linear;
   }
 
   .row{
-    margin-top: 60px;
+    margin-top: 110px;
   }
 
   .main {
@@ -436,8 +437,8 @@ transition: .25s linear;
 
   .nav-span span{
   display: block;
-  height: 4px;
-  margin-bottom: 8px;
+  height: 3px;
+  margin-bottom: 10px;
   position: relative;
   width: 50px;
   background: #000;
@@ -556,7 +557,7 @@ transition: .25s linear;
 }
 
 #MMMenu{
-  height: 50px;
+  height: 100px;
 }
 
 
