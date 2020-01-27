@@ -470,13 +470,6 @@ transition: .25s linear;
   width: 25px;
 }
 
-#menuToggle input:checked
-{
-  position: fixed;
-  top: 17px;
-  right: 11px;
-}
-
 /* 
  * Transform all the slices of hamburger
  * into a crossmark.
@@ -507,12 +500,6 @@ transition: .25s linear;
   width: 35px;
 }
 
-#menuToggle input:checked ~ .nav-span{
-  position: fixed;
-  z-index: 1;
-  top: 17px;
-  right: 11px;
-}
 
 /*
  * Make this absolute positioned
@@ -554,7 +541,7 @@ transition: .25s linear;
 {
   transform: none;
 }
-}
+
 
 #MMMenu{
   height: 100px;
