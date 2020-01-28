@@ -151,6 +151,7 @@ transition: .25s linear;
 .flex-container img{
   width: 100%;
   height: auto;
+  margin-bottom: 20px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -351,6 +352,10 @@ transition: .25s linear;
 
 @media screen and (max-width: 1000px) {
 
+  #first{
+      margin-top: 110px;
+  }
+
   .menu-container{
   display: none;
 
@@ -361,9 +366,7 @@ transition: .25s linear;
     width: 95%;
   }
 
-  .row{
-    margin-top: 110px;
-  }
+
 
   .main {
     display: block;
@@ -413,9 +416,9 @@ transition: .25s linear;
     transition: color 0.3s ease;
   }
 
-  #menuToggle a:hover{
+  #menuToggle li:hover a{
 
-    color: black;
+    color: red;
   }
 
   #menuToggle input
@@ -515,6 +518,7 @@ transition: .25s linear;
   padding: 50px;
   padding-top: 125px;
   top: 0;
+  left: 0;
   background: #FFF;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -531,8 +535,9 @@ transition: .25s linear;
 {
   font-family: Goudy_OldStyle-Bold;
   padding: 10px 0;
-  font-size: 2em;
+  font-size: 3em;
 }
+
 
 /*
  * And let's slide it in from the left
