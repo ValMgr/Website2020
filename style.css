@@ -353,8 +353,8 @@ transition: .25s linear;
 @media screen and (max-width: 1000px) {
 
   #first{
-      margin-top: 110px;
-  }
+    margin-top: 110px;
+}
 
   .menu-container{
   display: none;
@@ -365,7 +365,6 @@ transition: .25s linear;
     margin:  auto;
     width: 95%;
   }
-
 
 
   .main {
@@ -416,9 +415,9 @@ transition: .25s linear;
     transition: color 0.3s ease;
   }
 
-  #menuToggle li:hover a{
+  #menuToggle a:hover{
 
-    color: red;
+    color: black;
   }
 
   #menuToggle input
@@ -537,7 +536,6 @@ transition: .25s linear;
   padding: 10px 0;
   font-size: 3em;
 }
-
 
 /*
  * And let's slide it in from the left
