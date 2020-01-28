@@ -61,6 +61,7 @@ li{
  	margin-right: 10%;
   margin-left: 0px;
   position: fixed;
+
 }
 
 .menu-container a:active{
@@ -75,7 +76,7 @@ li{
 
 .projects-list{
   width: 100%;
-	font-family: Goudy_OldStyle;
+	font-family: 'Goudy_OldStyle';
 	font-size: 1em;
 	line-height: 1.3em;
 	color: #000;
@@ -128,7 +129,7 @@ transition: .25s linear;
 
 .player{
   width: 100%;
-  font-family: Goudy_OldStyle-Bold;
+  font-family: 'Goudy_OldStyle';
   line-height: 1.3em;
   margin-bottom: 35px;
 }
@@ -532,7 +533,7 @@ transition: .25s linear;
 
 #menu li
 {
-  font-family: Goudy_OldStyle-Bold;
+  font-family: 'Goudy_OldStyle';
   padding: 10px 0;
   font-size: 3em;
 }
