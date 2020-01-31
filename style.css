@@ -1,17 +1,27 @@
 @font-face {
-	font-family: "Goudy_OldStyle";
-	src: url(Goudy_OldStyle/LTCGoudyOldstyle.otf);
+  font-family: 'Goudy_Oldstyle';
+  src: url('Font/LTCGoudyOldstyle.woff2') format('woff2'),
+      url('Font/LTCGoudyOldstyle.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: "Goudy_OldStyle-Bold";
-	src: url(Goudy_OldStyle/LTCGoudyOldstyle-Bold.otf);
+  font-family: 'Goudy_Oldstyle';
+  src: url('Font/LTCGoudyOldstyle-BoldItalic.woff2') format('woff2'),
+      url('Font/LTCGoudyOldstyle-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-	font-family: "Goudy_OldStyle-BoldItalic";
-	src: url(Goudy_OldStyle/LTCGoudyOldstyle-BoldItalic.otf);
+  font-family: 'Goudy_Oldstyle';
+  src: url('Font/LTCGoudyOldstyle-Bold.woff2') format('woff2'),
+      url('Font/LTCGoudyOldstyle-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
+
 
 *{
     margin: 0;
@@ -372,9 +382,10 @@ transition: .25s linear;
 
 .title{
   display: block;
-  font-family: 'Goudy_OldStyle-BoldItalic';
+  font-family: 'Goudy_OldStyle';
   font-size: 3.5em;
-  font-weight: normal;
+  font-weight: bold;
+  font-style: italic;
   width: 100%;
   text-align: center;
 }
@@ -499,9 +510,10 @@ transition: .25s linear;
 #menuToggle input:checked ~ .nav-span span:nth-child(1)
 {
   opacity: 1;
-  background: #000;
+  background: rgb(255, 255, 255);
   transform: rotate(-45deg) translate(1px, 0px);
   width: 78px;
+
 }
 
 /*
@@ -520,6 +532,8 @@ transition: .25s linear;
 {
   transform: rotate(45deg) translate(-2px, 1px);
   width: 78px;
+  background: rgb(255, 255, 255);
+
 }
 
 
