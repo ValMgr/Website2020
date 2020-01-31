@@ -7,7 +7,7 @@
     var i = 1
     function changeURL(el){
         while(i == index){
-            i = Math.floor(Math.random() * 8);
+            i = Math.floor(Math.random() * 8); // Nbr de photo
         }
         
         index = i
