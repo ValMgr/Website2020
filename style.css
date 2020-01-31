@@ -386,7 +386,7 @@ transition: .25s linear;
 
   .flex-container {
     margin:  auto;
-    width: 85%;
+    width: 90%;
   }
 
   .row{
@@ -429,7 +429,7 @@ transition: .25s linear;
     height: 100%;
     margin: auto;
     z-index: 1;
-    width: 85%;
+    width: 90%;
     -webkit-user-select: none;
     user-select: none;
   }
@@ -518,7 +518,7 @@ transition: .25s linear;
  */
 #menuToggle input:checked ~ .nav-span span:nth-child(3)
 {
-  transform: rotate(45deg) translate(-2px, 2px);
+  transform: rotate(45deg) translate(-2px, 1px);
   width: 78px;
 }
 
