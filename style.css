@@ -43,6 +43,17 @@ body{
   position: absolute;
 }
 
+#background{
+  background: url('IMG/bg/bg-01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -300px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
 a{
   text-decoration: none;
   color: #000;
@@ -400,6 +411,8 @@ transition: .25s linear;
   display: flex;
   width: 35%;
 }
+
+
 
 #aboutCat{
   display: none;
@@ -837,6 +850,20 @@ transition: .25s linear;
   left: 50px;
 }
 
+.shortA{
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: 'Goudy_OldStyle';
+  z-index: 1;
+  position: absolute;
+  top: 30%;
+
+  display: flex;
+  width: 100%;
+  padding: 35px;
+  justify-content: center;
+}
 
 .parallax {
     position: absolute;
