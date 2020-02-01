@@ -377,13 +377,13 @@ transition: .25s linear;
 @media screen and (max-width: 1000px) {
 
   #first{
-    margin-top: 270px;
+    margin-top: 300px;
   }
 
 .title{
   display: block;
   font-family: 'Goudy_OldStyle';
-  font-size: 3.5em;
+  font-size: 5em;
   font-weight: bold;
   font-style: italic;
   width: 100%;
@@ -482,9 +482,9 @@ transition: .25s linear;
   .nav-span span{
   display: block;
   height: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   position: relative;
-  width: 75px;
+  width: 105px;
   background: #000;
   border-radius: 3px;  
   z-index: 1;
@@ -512,7 +512,7 @@ transition: .25s linear;
   opacity: 1;
   background: rgb(255, 255, 255);
   transform: rotate(-45deg) translate(1px, 0px);
-  width: 78px;
+  width: 90px;
 
 }
 
@@ -531,7 +531,7 @@ transition: .25s linear;
 #menuToggle input:checked ~ .nav-span span:nth-child(3)
 {
   transform: rotate(45deg) translate(-2px, 1px);
-  width: 78px;
+  width: 90px;
   background: rgb(255, 255, 255);
 
 }
@@ -549,7 +549,6 @@ transition: .25s linear;
   min-height: 100%;
   margin: 0 auto;
   padding: 50px;
-  padding-top: 125px;
   top: 0;
   left: 0;
   background: #ABABAB;
@@ -564,11 +563,25 @@ transition: .25s linear;
   transition: transform 0.9s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
+#menu ul{
+  margin-top: 300px;
+}
+
+#menu li{
   font-family: 'Goudy_OldStyle';
+  font-weight: bold;
+  font-style: italic;
+  color: #FFF;
   padding: 10px 0;
-  font-size: 3em;
+  font-size: 4.8em;
+}
+
+.RS{
+  font-size: .8em;
+}
+
+#menu a{
+  color: #FFF;
 }
 
 /*
