@@ -36,6 +36,13 @@ body{
 
 }
 
+#greyshade{
+  background: url('IMG/Greyshade.png');
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
 a{
   text-decoration: none;
   color: #000;
@@ -315,7 +322,7 @@ transition: .25s linear;
 }
 
 .category{
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -407,6 +414,10 @@ transition: .25s linear;
   }
 
   #menuToggle {
+    display: none;
+  }
+
+  #menuToggleI {
     display: none;
   }
 
@@ -538,7 +549,6 @@ transition: .25s linear;
     position: relative;
     height: 100%;
     margin: 6% auto;
-    z-index: 1;
     width: 90%;
     -webkit-user-select: none;
     user-select: none;
@@ -548,7 +558,6 @@ transition: .25s linear;
 
     text-decoration: none;
     color: #ffffff;
-    
     transition: color 0.3s ease;
   }
 
@@ -561,7 +570,7 @@ transition: .25s linear;
     right: 0;
     cursor: pointer;
     opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
+    z-index: 4; /* and place it over the hamburger */
     -webkit-touch-callout: none;
   }
 
@@ -573,7 +582,7 @@ transition: .25s linear;
     width: 45px;
     background: rgb(255, 255, 255);
     border-radius: 3px;  
-    z-index: 1;
+    z-index: 3;
     transform-origin: bottom right;
     float: right;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -632,7 +641,7 @@ transition: .25s linear;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   text-align: center;
-
+  z-index: 2;
   transform-origin: 0% 0%;
   transform: translate(0, -100%);
   
@@ -650,6 +659,8 @@ transition: .25s linear;
 
 #MMMenuI{
   height: 75px;
+  position: relative;
+  z-index: 2;
 }
 
 #MMMenuToggleI{
@@ -835,5 +846,5 @@ transition: .25s linear;
     overflow: hidden;
     left: 0;
     background-color: #000;
-    z-index: -1;
+    z-index: 0;
   }
