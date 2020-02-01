@@ -851,7 +851,6 @@ transition: .25s linear;
 }
 
 .shortA{
-  text-align: center;
   font-size: 15px;
   color: #ffffff;
   font-family: 'Goudy_OldStyle';
@@ -863,6 +862,15 @@ transition: .25s linear;
   width: 100%;
   padding: 35px;
   justify-content: center;
+}
+
+#titleA{
+  color: #FFF;
+  font-size: 2em;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align:center;
 }
 
 .parallax {
