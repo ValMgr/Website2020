@@ -522,7 +522,7 @@ transition: .25s linear;
   opacity: 1;
   background: rgb(255, 255, 255);
   transform: rotate(-45deg) translate(1px, 0px);
-  width: 92px;
+  width: 93px;
 
 }
 
@@ -541,7 +541,7 @@ transition: .25s linear;
 #menuToggle input:checked ~ .nav-span span:nth-child(3)
 {
   transform: rotate(45deg) translate(-4px, 3px);
-  width: 92px;
+  width: 93px;
   background: rgb(255, 255, 255);
 
 }
