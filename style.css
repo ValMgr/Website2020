@@ -174,7 +174,7 @@ transition: .25s linear;
   width: 100%;
   font-family: 'Goudy_OldStyle';
   line-height: 1.3em;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
@@ -195,7 +195,7 @@ transition: .25s linear;
   top: 100%;
   width: 100%;
   text-align: center;
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .photos{
@@ -458,7 +458,12 @@ transition: .25s linear;
   display: none;
 }
 
+.player{
+  margin-bottom: 100px;
+}
+
 .player p{
+  margin-top: 30px;
   font-size: 2em;
 }
 
