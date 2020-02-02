@@ -377,11 +377,9 @@ transition: .25s linear;
   position: absolute;
   right: 5%;
   top: 10%;
-  text-decoration: underline;
   color: #FFF;
 
-
-
+  /* text-decoration: underline; */
 }
 
 .nav{
@@ -398,6 +396,9 @@ transition: .25s linear;
   letter-spacing: normal;
   font-weight: bold;
   font-style: normal;
+
+  border-bottom: solid 1px #FFF;
+
 }
 
 .short{
