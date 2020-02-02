@@ -612,31 +612,22 @@ transition: .25s linear;
     height: 35px;
   }
 
-  #menuToggleI input:checked ~ .nav-spanI span:nth-child(1)
-{
+  #menuToggleI input:checked ~ .nav-spanI span:nth-child(1){
   opacity: 1;
   background: rgb(255, 255, 255);
   transform: rotate(-45deg) translate(1px, 0px);
-  width: 40px;
+  width: 41px;
 
 }
 
-/*
- * But let's hide the middle one.
- */
-#menuToggleI input:checked ~ .nav-spanI span:nth-child(2)
-{
+#menuToggleI input:checked ~ .nav-spanI span:nth-child(2){
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggleI input:checked ~ .nav-spanI span:nth-child(3)
-{
-  transform: rotate(45deg) translate(-2px, 2px);
-  width: 40px;
+#menuToggleI input:checked ~ .nav-spanI span:nth-child(3){
+  transform: rotate(45deg) translate(-1px, 2px);
+  width: 41px;
   background: rgb(255, 255, 255);
 }
 
