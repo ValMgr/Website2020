@@ -41,13 +41,14 @@ body{
   width: 100vw;
   height: 100vh;
   position: absolute;
+  z-index: 0;
 }
 
 #background{
   background: url('IMG/bg/bg-01.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -300px;
+  background-position-x: -251px;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -545,6 +546,14 @@ transition: .25s linear;
 
   }
 
+  #greyshade{
+    background: url('IMG/Greyshade.png');
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+  }
+
   #menuToggle{
 
     display: block;
@@ -595,7 +604,7 @@ transition: .25s linear;
     position: relative;
     width: 45px;
     background: rgb(255, 255, 255);
-    border-radius: 3px;  
+    border-radius: 1px;  
     z-index: 3;
     transform-origin: bottom right;
     float: right;
