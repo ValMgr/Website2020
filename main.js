@@ -18,7 +18,7 @@
             setTimeout(function () {
                 el.classList.remove('fadeOut')
                 el.classList.add('fadeIn')
-            }, 300);
+            }, 500);
 
         }, 1000);
         

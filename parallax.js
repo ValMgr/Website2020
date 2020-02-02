@@ -1,7 +1,7 @@
 if (window.matchMedia("(min-width: 600px)").matches) {
   var currentX = '';
   var currentY = '';
-  var movementConstant = .005;
+  var movementConstant = .002;
   $(document).mousemove(function(e) {
     if(currentX == '') currentX = e.pageX;
     var xdiff = e.pageX - currentX;
