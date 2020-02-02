@@ -196,7 +196,6 @@ transition: .25s linear;
   width: 100%;
   text-align: center;
   margin-top: 35px;
-  font-size: 2em;
 }
 
 .photos{
@@ -456,6 +455,10 @@ transition: .25s linear;
 
 .nav{
   display: none;
+}
+
+.player p{
+  font-size: 2em;
 }
 
 .category a{
