@@ -703,8 +703,7 @@ li{
     color: black;
   }
 
-  #menuToggle input
-{
+  #menuToggle input{
   display: block;
   width: 105px;
   height: 75px;
@@ -716,6 +715,20 @@ li{
   z-index: 2; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
+
+#menuToggle input:checked{
+  position: fixed;
+  right: 50px;
+  top: 80px;
+}
+
+#menuToggle input:checked ~ .nav-span{
+  position: fixed;
+  z-index: 1;
+  right: 50px;
+  top: 80px;
+}
+
 /*
  * Just a quick hamburger
  */
